@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Mon Portfolio</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-500">Accueil</a>
+        <a href="a-propos.html" class="text-gray-700 hover:text-indigo-500">À propos</a>
+        <a href="portfolio.html" class="text-indigo-600 font-semibold">Portfolio</a>
+        <li><a href="contact.html" class="text-gray-700 hover:text-indigo-500">Contact</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-indigo-600">Mes projets</h2>
+
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="img/logo_CordelFlix.png" alt="Projet 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">CordelFlix</h3>
+            <p class="text-sm text-gray-600 mb-4">Développement d'une app mobile avec React Native pour explorer
+              un catalogue de films via l'API TMDB, consulter les détails, effectuer
+              des recherches, et naviguer entre plusieurs écrans.</p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">React</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">JavaScript</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">API TMDB</span>
+            </div>
+            <a href="https://github.com/charlottecordelle/CordelFlix" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="img/franceinter-logo.jpg" alt="Projet FranceInter" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">FranceInter</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Développement d'une solution avec Microsoft Azure pour analyser des images de caméras IP, détecter le non-respect des distances et générer des messages audio multilingues, avec gestion via backoffice.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Microsoft Azure</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Détection d'image</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Backoffice</span>
+            </div>
+            <a href="https://github.com/charlottecordelle/FranceInter" target="_blank" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="img/arduino-led-program.jpg.webp" alt="Projet Etna ThermOS" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Etna ThermOS</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Ce projet explore l'univers Arduino en intégrant un capteur de température et d'humidité, affichant les mesures sur un écran LCD et utilisant des LEDs pour des indicateurs visuels. L'ensemble est prototypé sur une breadboard, combinant électronique et programmation.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Arduino</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Électronique</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Capteurs</span>
+            </div>
+            <a href="https://github.com/charlottecordelle/EtnaThermOs" target="_blank" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="img/syncplay.jpg" alt="Projet SyncPlay" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">SyncPlay</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Application web collaborative permettant à plusieurs utilisateurs de se connecter à une session partagée et de synchroniser la lecture de musiques à l'aide de l'API de Spotify. Les utilisateurs peuvent créer ou rejoindre une session via un code unique, ajouter des musiques depuis Spotify ou encore partager une expérience musicale en temps réel avec d'autres.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Next.js</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Prisma</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">PostgreSQL</span>
+            </div>
+            <a href="https://github.com/charlottecordelle/SyncPlay" target="_blank" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="img/Calculatrice.jpg" alt="Projet Calculatrice" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Calculatrice</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Développement d'une application web simple et intuitive permettant d'effectuer les opérations mathématiques de base : addition, soustraction, multiplication et division. Réalisée avec HTML, CSS et JavaScript, cette calculatrice offre une interface épurée, adaptée aussi bien aux ordinateurs qu'aux appareils mobiles.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">HTML</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">CSS</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">JavaScript</span>
+            </div>
+            <a href="https://github.com/charlottecordelle/Calculatrice" target="_blank" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="img/Adolia.jpg" alt="Site e-commerce" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Site E-Commerce</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Création d'un site e-commerce destiné aux adolescents, proposant des produits de maquillage accessibles et tendances. Adolia offre une navigation fluide, des fiches produits détaillées, un panier interactif, ainsi que des petits jeux. L'interface est pensée pour refléter une identité jeune, dynamique et engageante.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">React</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Docker</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">NestJS</span>
+            </div>
+            <a href="https://github.com/charlottecordelle/site_e-commerce" target="_blank" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
